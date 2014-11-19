@@ -11,11 +11,19 @@ class Computer:
         self.hd=parts.HardDisk()
     # implement the class below this line    
 
+    def startComputer(self):
+        self.cpu.check()
+        self.mem.load()
+        self.hd.mount()
 
+    def printCPUInfo(self):
+        self.cpu.getInfo()
 
+    def printMemInfo(self):
+        self.cpu.getInfo()
 
-
-
+    def printHDInfo(self):
+        self.cpu.getInfo()
 
 
 # The running part
